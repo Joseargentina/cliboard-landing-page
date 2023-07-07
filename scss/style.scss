@@ -1,0 +1,10 @@
+@import './utilities/variables';
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+@import './utilities/mixins';
+@import './base/reset';
+@import './base/tipografia';
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';
+@import './layout/media-375';
+@import './layout/media-1440';

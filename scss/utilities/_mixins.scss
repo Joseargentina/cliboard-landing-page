@@ -1,0 +1,56 @@
+@mixin flex($justify, $aligin, $gap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $aligin;
+    gap: $gap;
+}
+
+@mixin grid($cols, $gap){
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    gap: $gap;
+}
+
+
+@mixin telefono { 
+    @media (min-width: $telefono ) {
+        @content;
+    } 
+}
+@mixin tablet { 
+    @media (min-width: $tablet ) {
+        @content;
+    } 
+}
+@mixin desktop { 
+    @media (min-width: $desktop ) {
+        @content;
+    } 
+}
+@mixin desktopxl { 
+    @media (min-width: $desktopxl ) {
+        @content;
+    } 
+}
+
+@mixin boton($bgColor, $colorTexto) {
+    background-color: $bgColor;
+    padding: 1.5rem 4rem;
+    color: $colorTexto;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    font-weight: 700;
+    border: none;
+    transition-property: background-color;
+    transition-duration: .3s;
+    text-align: center;
+
+    @include tablet {
+        width: auto;
+    }
+    &:hover {
+        background-color: darken( $bgColor, 10% );
+    }
+}
