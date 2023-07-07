@@ -16,3 +16,12 @@ body {
     font-family: $FuentePrincipal;
     font-size: $font-size; //18px 1.8rem
 }
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
